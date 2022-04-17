@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <script>
+        var btnContainer = document.getElementById("navbar");
+
+        // Get all buttons with class="btn" inside the container
+        var btns = btnContainer.getElementsByClassName("link");
+
+        // Loop through the buttons and add the active class to the current/clicked button
+        for (var i = 0; i < btns.length; i++) {
+        btns[i].addEventListener("click", function() {
+            var current = document.getElementsByClassName("active");
+
+            // If there's no active class
+            if (current.length > 0) {
+            current[0].className = current[0].className.replace(" active", "");
+            }
+
+            // Add the active class to the current/clicked button
+            this.className += " active";
+        });
+        }
+    </script>
+    <header id="header">
+        <div id="header-container">
+
+            <h1 id="header-title">BIENES <span>RAICES</span></h1>
+            <nav class="navbar">
+                <a class="link" href="">Inicio</a>
+                <a class="link" href="">Nosotros</a>
+                <a class="link" href="">Blog</a>
+                <a class="link" href="">Contacto</a>
+                
+            </nav>
+
+        </div>
+
+    </header>
+    <main>
+        <section>
+            <h1 class="section-title">Mas sobre nosotros</h1>
+            <div class="container">
+               
+                
+                <div class="container-card">
+                    <div class="card">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="123" height="93" viewBox="0 0 123 93">
+                            <defs>
+                              <clipPath id="clip-Watch_38mm_1">
+                                <rect width="123" height="93"/>
+                              </clipPath>
+                            </defs>
+                            <g id="Watch_38mm_1" data-name="Watch 38mm – 1" clip-path="url(#clip-Watch_38mm_1)">
+                              <rect width="123" height="93" fill="#fff"/>
+                              <g id="icono1" transform="translate(-1.153)">
+                                <g id="Group_1" data-name="Group 1" transform="translate(24.153)">
+                                  <path id="Path_1" data-name="Path 1" d="M80.207,37.526v-18.6C80.207,8.491,70.964,0,59.6,0S38.991,8.491,38.991,18.928v18.6H24.153V93h72.54V37.526Zm-37.919-18.6c0-8.638,7.765-15.665,17.311-15.665S76.91,10.289,76.91,18.926v18.6H42.288ZM93.4,89.737H27.452V83.211H93.4ZM27.452,79.947V40.79H93.4V79.947Z" transform="translate(-24.153)" fill="#e08709"/>
+                                  <path id="Path_2" data-name="Path 2" d="M62.657,54.386a6.568,6.568,0,0,0-6.595,6.523V70.7a6.595,6.595,0,1,0,13.189,0V60.909a6.568,6.568,0,0,0-6.595-6.523Zm3.3,16.316a3.3,3.3,0,1,1-6.6,0V60.909a3.3,3.3,0,1,1,6.6,0Z" transform="translate(-26.387 -3.807)" fill="#e08709"/>
+                                </g>
+                              </g>
+                            </g>
+                          </svg>
+                          <h1 class="card-title">SEGURIDAD</h1>
+                          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum, aliquam fuga mollitia maxime quae praesentium, facilis, voluptatem iste culpa architecto
+                               molestias eius illo excepturi dignissimos laudantium saepe explicabo voluptate velit.</p>
+    
+                    </div>
+                    <div class="card">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="119.306" height="93" viewBox="0 0 119.306 93">
+                            <g id="icono2" transform="translate(-15.872 -14.115)">
+                              <g id="Group_3" data-name="Group 3" transform="translate(15.88 14.115)">
+                                <g id="Group_2" data-name="Group 2">
+                                  <path id="Path_3" data-name="Path 3" d="M134.857,61.916a2.1,2.1,0,0,0-.734-.735h.126L57.272,14.4a2.094,2.094,0,0,0-2.1,0L17.043,34.768a2.1,2.1,0,0,0-.188,3.654L93.936,86.341a2.094,2.094,0,0,0,2.138.042L134.12,64.794A2.1,2.1,0,0,0,134.857,61.916ZM95.174,82.187,22.221,36.761,56.119,18.6l72.826,44.333Z" transform="translate(-15.88 -14.115)" fill="#e08709"/>
+                                </g>
+                              </g>
+                              <g id="Group_5" data-name="Group 5" transform="translate(15.872 44.728)">
+                                <g id="Group_4" data-name="Group 4" transform="translate(0 0)">
+                                  <path id="Path_4" data-name="Path 4" d="M134.9,74.123a2.1,2.1,0,0,0-2.872-.777h.126l-36.959,21L19.118,47.032a2.114,2.114,0,1,0-2.264,3.57L93.936,98.526a2.094,2.094,0,0,0,2.138.042L134.12,77A2.11,2.11,0,0,0,134.9,74.123Z" transform="translate(-15.872 -46.703)" fill="#e08709"/>
+                                </g>
+                              </g>
+                              <g id="Group_7" data-name="Group 7" transform="translate(15.872 54.934)">
+                                <g id="Group_6" data-name="Group 6">
+                                  <path id="Path_5" data-name="Path 5" d="M134.45,84.913a2.1,2.1,0,0,0-2.3-.682l-37.062,21L19.118,57.9a2.114,2.114,0,1,0-2.264,3.57l77.082,47.966a2.094,2.094,0,0,0,2.138.042L134.12,87.869a2.1,2.1,0,0,0,.331-2.956Z" transform="translate(-15.872 -57.568)" fill="#e08709"/>
+                                </g>
+                              </g>
+                              <g id="Group_9" data-name="Group 9" transform="translate(63.143 38.316)">
+                                <g id="Group_8" data-name="Group 8">
+                                  <path id="Path_6" data-name="Path 6" d="M90.642,40.662a2.094,2.094,0,0,0-2.947-.323,2.144,2.144,0,0,0-.163.147l-2.243,2.1a9.528,9.528,0,0,0-2.348-1.554,6.612,6.612,0,0,0-3.585-.588,5.362,5.362,0,0,0-2.912,1.323A4.58,4.58,0,0,0,74.87,44.56a7.445,7.445,0,0,0,.356,3.4,24.507,24.507,0,0,0,1.09,2.646l-4.193,3.758A3.917,3.917,0,0,1,72,53.926a5.889,5.889,0,0,1,.315-3.006,4.549,4.549,0,0,0,.293-1.409,1.851,1.851,0,0,0-.545-1.239,2.137,2.137,0,0,0-3.081-.231,4.454,4.454,0,0,0-1.321,2.5,7.215,7.215,0,0,0,.376,3.738,10.759,10.759,0,0,0,1.279,2.531l-2.411,2.1a2.1,2.1,0,0,0,1.4,3.675l-.042.063a2.093,2.093,0,0,0,1.409-.525l2.369-2.1a12.38,12.38,0,0,0,2.621,1.89,6.281,6.281,0,0,0,7.463-.945,4.432,4.432,0,0,0,1.409-2.349,6.8,6.8,0,0,0-.105-3.108A17.66,17.66,0,0,0,81.8,51.5v-.126l3.476-3.129a4.9,4.9,0,0,1,0,1.722A9.3,9.3,0,0,0,85.1,51.9a2.1,2.1,0,0,0,.587,1.365,2.451,2.451,0,0,0,1.614.924,2.094,2.094,0,0,0,1.53-.546,3.151,3.151,0,0,0,.9-1.575,5.788,5.788,0,0,0,0-2.331,9.425,9.425,0,0,0-.991-2.843,12.854,12.854,0,0,0-.713-1.176l2.285-2.1A2.1,2.1,0,0,0,90.642,40.662ZM77.763,57.747a2.094,2.094,0,0,1-1.908.316,3.75,3.75,0,0,1-1.174-.525l3.543-3.086a7.384,7.384,0,0,1,.356,1.2A2.227,2.227,0,0,1,77.763,57.747Zm2.075-10.29a4.681,4.681,0,0,1-.188-.987,1.661,1.661,0,0,1,.545-1.533,1.8,1.8,0,0,1,1.785-.315,3.65,3.65,0,0,1,.608.273Z" transform="translate(-66.193 -39.877)" fill="#e08709"/>
+                                </g>
+                              </g>
+                            </g>
+                          </svg>
+                          <h1 class="card-title">EL MEJOR PRECIO</h1>
+                          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum, aliquam fuga mollitia maxime quae praesentium, facilis, voluptatem iste culpa architecto
+                            molestias eius illo excepturi dignissimos laudantium saepe explicabo voluptate velit.</p>
+                        
+                    </div>
+                    <div class="card">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="93" height="93" viewBox="0 0 93 93">
+                            <g id="icono3" transform="translate(-11.625)">
+                              <g id="Group_11" data-name="Group 11">
+                                <g id="Group_10" data-name="Group 10">
+                                  <path id="Path_7" data-name="Path 7" d="M58.125,0a46.5,46.5,0,1,0,46.5,46.5A46.5,46.5,0,0,0,58.125,0ZM60.12,88.911V80.732a2,2,0,1,0-3.99,0v8.179A42.49,42.49,0,0,1,15.714,48.5h8.179a1.995,1.995,0,1,0,0-3.99H15.714A42.49,42.49,0,0,1,56.13,4.089v8.179a1.995,1.995,0,1,0,3.99,0V4.089a42.49,42.49,0,0,1,40.416,40.416H92.357a2,2,0,1,0,0,3.99h8.2A42.49,42.49,0,0,1,60.12,88.911Z" fill="#e08709"/>
+                                </g>
+                              </g>
+                              <g id="Group_13" data-name="Group 13">
+                                <g id="Group_12" data-name="Group 12">
+                                  <path id="Path_8" data-name="Path 8" d="M79.171,65.052,60.12,45.682V25.554a2,2,0,1,0-3.99,0V46.5a2,2,0,0,0,.578,1.4l19.61,19.945a2,2,0,0,0,2.853-2.793Z" fill="#e08709"/>
+                                </g>
+                              </g>
+                            </g>
+                          </svg>
+                          <h1 class="card-title">A TIEMPO</h1>
+                          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum, aliquam fuga mollitia maxime quae praesentium, facilis, voluptatem iste culpa architecto
+                            molestias eius illo excepturi dignissimos laudantium saepe explicabo voluptate velit.</p>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h1 class="section-title">Casas y departamentos</h1>
+            <div class="container">
+                <div class="container-card">
+
+                    <div class="card">
+                        <img src="images/anuncio1.jpg" alt="">
+                        <h1 class="card-title">Casa de lujo en el lago</h1>
+                        <p>Casa en el lago con excelente vista,
+                            acabados de lujo en un excelente precio.
+                        </p>
+                        <h3 class="price">3,000,000</h3>
+                        <div class="icons-container">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="34" height="37" viewBox="0 0 34 37">
+                                <g id="Objeto_inteligente_vectorial" data-name="Objeto inteligente vectorial" transform="translate(-6.182)">
+                                  <g id="Group_15" data-name="Group 15">
+                                    <g id="Group_14" data-name="Group 14">
+                                      <path id="Path_9" data-name="Path 9" d="M37.091,16.65H21.018V3.587A1.845,1.845,0,0,0,20.4,0H8.036a1.845,1.845,0,0,0-.618,3.587V18.5a1.852,1.852,0,0,0,1.855,1.85h1.855V25.9a5.563,5.563,0,0,0,5.564,5.55v4.933a.617.617,0,0,0,.618.617H28.437a.617.617,0,0,0,.618-.617V31.419a10.5,10.5,0,0,0,9.891-10.452V20.35h.618a.617.617,0,0,0,.618-.617A3.091,3.091,0,0,0,37.091,16.65ZM7.418,1.85a.617.617,0,0,1,.618-.617H20.4a.617.617,0,1,1,0,1.233H8.036A.617.617,0,0,1,7.418,1.85ZM9.273,19.117a.617.617,0,0,1-.618-.617V3.7H19.782V19.117Zm18.546,16.65H17.927V31.45h9.891Zm9.891-14.8a9.272,9.272,0,0,1-9.273,9.25H16.691A4.328,4.328,0,0,1,12.364,25.9V20.35H37.71Zm-16.691-1.85V17.883H37.091a1.858,1.858,0,0,1,1.749,1.233Z"/>
+                                    </g>
+                                  </g>
+                                </g>
+                              </svg>
+                              <h3>3</h3>
+
+
+                              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="31" viewBox="0 0 40 31">
+                                <g id="Objeto_inteligente_vectorial" data-name="Objeto inteligente vectorial" transform="translate(-5 -4.539)">
+                                  <g id="Group_17" data-name="Group 17">
+                                    <g id="Group_16" data-name="Group 16">
+                                      <path id="Path_10" data-name="Path 10" d="M43.47,16.057l-.872-.925-3.06-8.264A3.589,3.589,0,0,0,36.2,4.539H14.342A3.577,3.577,0,0,0,11,6.868L7.983,15.029,6.727,16.194A4.924,4.924,0,0,0,5,19.936v12.04a3.576,3.576,0,0,0,3.573,3.562h2.256A3.576,3.576,0,0,0,14.4,31.976V30.229H35.6v1.747a3.576,3.576,0,0,0,3.573,3.562h2.256A3.576,3.576,0,0,0,45,31.976V19.619A4.97,4.97,0,0,0,43.47,16.057ZM12.607,7.45a1.849,1.849,0,0,1,1.735-1.2H36.205a1.861,1.861,0,0,1,1.735,1.2l2.667,7.193H38.615a5.861,5.861,0,0,0-11.6,0H9.94Zm24.265,7.193H28.744a4.15,4.15,0,0,1,8.128,0ZM12.692,31.976a1.86,1.86,0,0,1-1.863,1.85H8.573a1.86,1.86,0,0,1-1.863-1.85V29.733a3.466,3.466,0,0,0,1.863.5h4.12Zm30.6,0a1.86,1.86,0,0,1-1.863,1.85H39.171a1.866,1.866,0,0,1-1.863-1.85V30.229h4.12a3.466,3.466,0,0,0,1.863-.5v2.244Zm-1.863-3.46H8.573a1.846,1.846,0,0,1-1.863-1.833V19.936a3.218,3.218,0,0,1,1.137-2.449l.034-.034,1.162-1.1H41.41l.82.882c.009.017.034.026.043.043a3.23,3.23,0,0,1,1.009,2.338v7.065h.008A1.851,1.851,0,0,1,41.427,28.517Z"/>
+                                    </g>
+                                  </g>
+                                  <g id="Group_19" data-name="Group 19">
+                                    <g id="Group_18" data-name="Group 18">
+                                      <path id="Path_11" data-name="Path 11" d="M16.282,19.782H9.872a.858.858,0,0,0-.855.856v4.453a.858.858,0,0,0,.855.856h6.41a.858.858,0,0,0,.855-.856V20.638A.858.858,0,0,0,16.282,19.782Zm-.855,4.453h-4.7v-2.74h4.7Z"/>
+                                    </g>
+                                  </g>
+                                  <g id="Group_21" data-name="Group 21">
+                                    <g id="Group_20" data-name="Group 20">
+                                      <path id="Path_12" data-name="Path 12" d="M40.128,19.782h-6.41a.858.858,0,0,0-.855.856v4.453a.858.858,0,0,0,.855.856h6.41a.858.858,0,0,0,.855-.856V20.638A.858.858,0,0,0,40.128,19.782Zm-.855,4.453h-4.7v-2.74h4.7Z"/>
+                                    </g>
+                                  </g>
+                                  <g id="Group_23" data-name="Group 23">
+                                    <g id="Group_22" data-name="Group 22">
+                                      <path id="Path_13" data-name="Path 13" d="M29.128,23.378H20.872a.856.856,0,0,0,0,1.713h8.256a.856.856,0,0,0,0-1.713Z"/>
+                                    </g>
+                                  </g>
+                                  <g id="Group_25" data-name="Group 25">
+                                    <g id="Group_24" data-name="Group 24">
+                                      <path id="Path_14" data-name="Path 14" d="M29.128,20.724H20.872a.856.856,0,0,0,0,1.713h8.256a.856.856,0,0,0,0-1.713Z"/>
+                                    </g>
+                                  </g>
+                                </g>
+                              </svg>
+                              <h3>3</h3>
+                              
+                              
+                              <svg xmlns="http://www.w3.org/2000/svg" width="46" height="31" viewBox="0 0 46 31">
+                                <g id="Objeto_inteligente_vectorial" data-name="Objeto inteligente vectorial" transform="translate(-5.75 -7.431)">
+                                  <g id="Group_27" data-name="Group 27">
+                                    <g id="Group_26" data-name="Group 26">
+                                      <path id="Path_15" data-name="Path 15" d="M47.273,19.449V11.993A4.262,4.262,0,0,0,42.7,7.431H14.655a4.236,4.236,0,0,0-4.575,4.562v7.456c-2.214.245-4.329,1.717-4.329,5.1v5.788A1.761,1.761,0,0,0,7.521,32.1h.59v4.562a1.761,1.761,0,0,0,1.771,1.766h1.673a1.761,1.761,0,0,0,1.771-1.766V32.055H44.174v4.611a1.761,1.761,0,0,0,1.771,1.766h1.673a1.761,1.761,0,0,0,1.771-1.766V32.055h.59a1.761,1.761,0,0,0,1.771-1.766V24.55C51.6,21.165,49.487,19.694,47.273,19.449ZM11.752,11.993h.1a2.513,2.513,0,0,1,2.8-2.8H42.7a2.513,2.513,0,0,1,2.8,2.8V19.4H44.174V15.181A1.761,1.761,0,0,0,42.4,13.415H31.579a1.761,1.761,0,0,0-1.771,1.766V19.4H27.741V15.181a1.761,1.761,0,0,0-1.771-1.766H15.147a1.761,1.761,0,0,0-1.771,1.766V19.4H11.752ZM42.4,15.181V19.4H31.579V15.181Zm-16.334,0V19.4H15.245V15.181ZM11.506,36.665H9.833V32.055h1.673v4.611Zm36.013,0H45.846V32.055h1.673Zm2.312-6.328H7.472v-2.6H49.831Zm0-4.366H7.472V24.55a3.089,3.089,0,0,1,3.395-3.384h35.57a3.07,3.07,0,0,1,3.395,3.384v1.422Z"/>
+                                    </g>
+                                  </g>
+                                </g>
+                              </svg>
+                              <h3>2</h3>
+                              
+                        </div>
+
+                        <button class="button-orange">Ver propiedad</button>
+                        
+                    </div>
+                    <div class="card">
+                        <img src="images/anuncio2.jpg" alt="">
+                        <h1 class="card-title">Casa terminada de lujo</h1>
+                        <p>Casa con diseño moderno asi como tecnologia
+                            inteligente y amueblada
+                        </p>
+                        <h3 class="price">2,000,000</h3>
+                        <div class="icons-container">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="34" height="37" viewBox="0 0 34 37">
+                                <g id="Objeto_inteligente_vectorial" data-name="Objeto inteligente vectorial" transform="translate(-6.182)">
+                                  <g id="Group_15" data-name="Group 15">
+                                    <g id="Group_14" data-name="Group 14">
+                                      <path id="Path_9" data-name="Path 9" d="M37.091,16.65H21.018V3.587A1.845,1.845,0,0,0,20.4,0H8.036a1.845,1.845,0,0,0-.618,3.587V18.5a1.852,1.852,0,0,0,1.855,1.85h1.855V25.9a5.563,5.563,0,0,0,5.564,5.55v4.933a.617.617,0,0,0,.618.617H28.437a.617.617,0,0,0,.618-.617V31.419a10.5,10.5,0,0,0,9.891-10.452V20.35h.618a.617.617,0,0,0,.618-.617A3.091,3.091,0,0,0,37.091,16.65ZM7.418,1.85a.617.617,0,0,1,.618-.617H20.4a.617.617,0,1,1,0,1.233H8.036A.617.617,0,0,1,7.418,1.85ZM9.273,19.117a.617.617,0,0,1-.618-.617V3.7H19.782V19.117Zm18.546,16.65H17.927V31.45h9.891Zm9.891-14.8a9.272,9.272,0,0,1-9.273,9.25H16.691A4.328,4.328,0,0,1,12.364,25.9V20.35H37.71Zm-16.691-1.85V17.883H37.091a1.858,1.858,0,0,1,1.749,1.233Z"/>
+                                    </g>
+                                  </g>
+                                </g>
+                              </svg>
+                              <h3>3</h3>
+
+
+                              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="31" viewBox="0 0 40 31">
+                                <g id="Objeto_inteligente_vectorial" data-name="Objeto inteligente vectorial" transform="translate(-5 -4.539)">
+                                  <g id="Group_17" data-name="Group 17">
+                                    <g id="Group_16" data-name="Group 16">
+                                      <path id="Path_10" data-name="Path 10" d="M43.47,16.057l-.872-.925-3.06-8.264A3.589,3.589,0,0,0,36.2,4.539H14.342A3.577,3.577,0,0,0,11,6.868L7.983,15.029,6.727,16.194A4.924,4.924,0,0,0,5,19.936v12.04a3.576,3.576,0,0,0,3.573,3.562h2.256A3.576,3.576,0,0,0,14.4,31.976V30.229H35.6v1.747a3.576,3.576,0,0,0,3.573,3.562h2.256A3.576,3.576,0,0,0,45,31.976V19.619A4.97,4.97,0,0,0,43.47,16.057ZM12.607,7.45a1.849,1.849,0,0,1,1.735-1.2H36.205a1.861,1.861,0,0,1,1.735,1.2l2.667,7.193H38.615a5.861,5.861,0,0,0-11.6,0H9.94Zm24.265,7.193H28.744a4.15,4.15,0,0,1,8.128,0ZM12.692,31.976a1.86,1.86,0,0,1-1.863,1.85H8.573a1.86,1.86,0,0,1-1.863-1.85V29.733a3.466,3.466,0,0,0,1.863.5h4.12Zm30.6,0a1.86,1.86,0,0,1-1.863,1.85H39.171a1.866,1.866,0,0,1-1.863-1.85V30.229h4.12a3.466,3.466,0,0,0,1.863-.5v2.244Zm-1.863-3.46H8.573a1.846,1.846,0,0,1-1.863-1.833V19.936a3.218,3.218,0,0,1,1.137-2.449l.034-.034,1.162-1.1H41.41l.82.882c.009.017.034.026.043.043a3.23,3.23,0,0,1,1.009,2.338v7.065h.008A1.851,1.851,0,0,1,41.427,28.517Z"/>
+                                    </g>
+                                  </g>
+                                  <g id="Group_19" data-name="Group 19">
+                                    <g id="Group_18" data-name="Group 18">
+                                      <path id="Path_11" data-name="Path 11" d="M16.282,19.782H9.872a.858.858,0,0,0-.855.856v4.453a.858.858,0,0,0,.855.856h6.41a.858.858,0,0,0,.855-.856V20.638A.858.858,0,0,0,16.282,19.782Zm-.855,4.453h-4.7v-2.74h4.7Z"/>
+                                    </g>
+                                  </g>
+                                  <g id="Group_21" data-name="Group 21">
+                                    <g id="Group_20" data-name="Group 20">
+                                      <path id="Path_12" data-name="Path 12" d="M40.128,19.782h-6.41a.858.858,0,0,0-.855.856v4.453a.858.858,0,0,0,.855.856h6.41a.858.858,0,0,0,.855-.856V20.638A.858.858,0,0,0,40.128,19.782Zm-.855,4.453h-4.7v-2.74h4.7Z"/>
+                                    </g>
+                                  </g>
+                                  <g id="Group_23" data-name="Group 23">
+                                    <g id="Group_22" data-name="Group 22">
+                                      <path id="Path_13" data-name="Path 13" d="M29.128,23.378H20.872a.856.856,0,0,0,0,1.713h8.256a.856.856,0,0,0,0-1.713Z"/>
+                                    </g>
+                                  </g>
+                                  <g id="Group_25" data-name="Group 25">
+                                    <g id="Group_24" data-name="Group 24">
+                                      <path id="Path_14" data-name="Path 14" d="M29.128,20.724H20.872a.856.856,0,0,0,0,1.713h8.256a.856.856,0,0,0,0-1.713Z"/>
+                                    </g>
+                                  </g>
+                                </g>
+                              </svg>
+                              <h3>3</h3>
+                              
+                              
+                              <svg xmlns="http://www.w3.org/2000/svg" width="46" height="31" viewBox="0 0 46 31">
+                                <g id="Objeto_inteligente_vectorial" data-name="Objeto inteligente vectorial" transform="translate(-5.75 -7.431)">
+                                  <g id="Group_27" data-name="Group 27">
+                                    <g id="Group_26" data-name="Group 26">
+                                      <path id="Path_15" data-name="Path 15" d="M47.273,19.449V11.993A4.262,4.262,0,0,0,42.7,7.431H14.655a4.236,4.236,0,0,0-4.575,4.562v7.456c-2.214.245-4.329,1.717-4.329,5.1v5.788A1.761,1.761,0,0,0,7.521,32.1h.59v4.562a1.761,1.761,0,0,0,1.771,1.766h1.673a1.761,1.761,0,0,0,1.771-1.766V32.055H44.174v4.611a1.761,1.761,0,0,0,1.771,1.766h1.673a1.761,1.761,0,0,0,1.771-1.766V32.055h.59a1.761,1.761,0,0,0,1.771-1.766V24.55C51.6,21.165,49.487,19.694,47.273,19.449ZM11.752,11.993h.1a2.513,2.513,0,0,1,2.8-2.8H42.7a2.513,2.513,0,0,1,2.8,2.8V19.4H44.174V15.181A1.761,1.761,0,0,0,42.4,13.415H31.579a1.761,1.761,0,0,0-1.771,1.766V19.4H27.741V15.181a1.761,1.761,0,0,0-1.771-1.766H15.147a1.761,1.761,0,0,0-1.771,1.766V19.4H11.752ZM42.4,15.181V19.4H31.579V15.181Zm-16.334,0V19.4H15.245V15.181ZM11.506,36.665H9.833V32.055h1.673v4.611Zm36.013,0H45.846V32.055h1.673Zm2.312-6.328H7.472v-2.6H49.831Zm0-4.366H7.472V24.55a3.089,3.089,0,0,1,3.395-3.384h35.57a3.07,3.07,0,0,1,3.395,3.384v1.422Z"/>
+                                    </g>
+                                  </g>
+                                </g>
+                              </svg>
+                              <h3>2</h3>
+                              
+                        </div>
+
+                        <button class="button-orange">Ver propiedad</button>
+                        
+                    </div>
+                    <div class="card">
+                        <img src="images/anuncio3.jpg" alt="">
+                        <h1 class="card-title">Casa con piscina</h1>
+                        <p>Casa con piscina y acabados de lujo en la ciudad. Excelente oportunidad.
+                        </p>
+                        <h3 class="price">3,000,000</h3>
+                        <div class="icons-container">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="34" height="37" viewBox="0 0 34 37">
+                                <g id="Objeto_inteligente_vectorial" data-name="Objeto inteligente vectorial" transform="translate(-6.182)">
+                                  <g id="Group_15" data-name="Group 15">
+                                    <g id="Group_14" data-name="Group 14">
+                                      <path id="Path_9" data-name="Path 9" d="M37.091,16.65H21.018V3.587A1.845,1.845,0,0,0,20.4,0H8.036a1.845,1.845,0,0,0-.618,3.587V18.5a1.852,1.852,0,0,0,1.855,1.85h1.855V25.9a5.563,5.563,0,0,0,5.564,5.55v4.933a.617.617,0,0,0,.618.617H28.437a.617.617,0,0,0,.618-.617V31.419a10.5,10.5,0,0,0,9.891-10.452V20.35h.618a.617.617,0,0,0,.618-.617A3.091,3.091,0,0,0,37.091,16.65ZM7.418,1.85a.617.617,0,0,1,.618-.617H20.4a.617.617,0,1,1,0,1.233H8.036A.617.617,0,0,1,7.418,1.85ZM9.273,19.117a.617.617,0,0,1-.618-.617V3.7H19.782V19.117Zm18.546,16.65H17.927V31.45h9.891Zm9.891-14.8a9.272,9.272,0,0,1-9.273,9.25H16.691A4.328,4.328,0,0,1,12.364,25.9V20.35H37.71Zm-16.691-1.85V17.883H37.091a1.858,1.858,0,0,1,1.749,1.233Z"/>
+                                    </g>
+                                  </g>
+                                </g>
+                              </svg>
+                              <h3>3</h3>
+
+
+                              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="31" viewBox="0 0 40 31">
+                                <g id="Objeto_inteligente_vectorial" data-name="Objeto inteligente vectorial" transform="translate(-5 -4.539)">
+                                  <g id="Group_17" data-name="Group 17">
+                                    <g id="Group_16" data-name="Group 16">
+                                      <path id="Path_10" data-name="Path 10" d="M43.47,16.057l-.872-.925-3.06-8.264A3.589,3.589,0,0,0,36.2,4.539H14.342A3.577,3.577,0,0,0,11,6.868L7.983,15.029,6.727,16.194A4.924,4.924,0,0,0,5,19.936v12.04a3.576,3.576,0,0,0,3.573,3.562h2.256A3.576,3.576,0,0,0,14.4,31.976V30.229H35.6v1.747a3.576,3.576,0,0,0,3.573,3.562h2.256A3.576,3.576,0,0,0,45,31.976V19.619A4.97,4.97,0,0,0,43.47,16.057ZM12.607,7.45a1.849,1.849,0,0,1,1.735-1.2H36.205a1.861,1.861,0,0,1,1.735,1.2l2.667,7.193H38.615a5.861,5.861,0,0,0-11.6,0H9.94Zm24.265,7.193H28.744a4.15,4.15,0,0,1,8.128,0ZM12.692,31.976a1.86,1.86,0,0,1-1.863,1.85H8.573a1.86,1.86,0,0,1-1.863-1.85V29.733a3.466,3.466,0,0,0,1.863.5h4.12Zm30.6,0a1.86,1.86,0,0,1-1.863,1.85H39.171a1.866,1.866,0,0,1-1.863-1.85V30.229h4.12a3.466,3.466,0,0,0,1.863-.5v2.244Zm-1.863-3.46H8.573a1.846,1.846,0,0,1-1.863-1.833V19.936a3.218,3.218,0,0,1,1.137-2.449l.034-.034,1.162-1.1H41.41l.82.882c.009.017.034.026.043.043a3.23,3.23,0,0,1,1.009,2.338v7.065h.008A1.851,1.851,0,0,1,41.427,28.517Z"/>
+                                    </g>
+                                  </g>
+                                  <g id="Group_19" data-name="Group 19">
+                                    <g id="Group_18" data-name="Group 18">
+                                      <path id="Path_11" data-name="Path 11" d="M16.282,19.782H9.872a.858.858,0,0,0-.855.856v4.453a.858.858,0,0,0,.855.856h6.41a.858.858,0,0,0,.855-.856V20.638A.858.858,0,0,0,16.282,19.782Zm-.855,4.453h-4.7v-2.74h4.7Z"/>
+                                    </g>
+                                  </g>
+                                  <g id="Group_21" data-name="Group 21">
+                                    <g id="Group_20" data-name="Group 20">
+                                      <path id="Path_12" data-name="Path 12" d="M40.128,19.782h-6.41a.858.858,0,0,0-.855.856v4.453a.858.858,0,0,0,.855.856h6.41a.858.858,0,0,0,.855-.856V20.638A.858.858,0,0,0,40.128,19.782Zm-.855,4.453h-4.7v-2.74h4.7Z"/>
+                                    </g>
+                                  </g>
+                                  <g id="Group_23" data-name="Group 23">
+                                    <g id="Group_22" data-name="Group 22">
+                                      <path id="Path_13" data-name="Path 13" d="M29.128,23.378H20.872a.856.856,0,0,0,0,1.713h8.256a.856.856,0,0,0,0-1.713Z"/>
+                                    </g>
+                                  </g>
+                                  <g id="Group_25" data-name="Group 25">
+                                    <g id="Group_24" data-name="Group 24">
+                                      <path id="Path_14" data-name="Path 14" d="M29.128,20.724H20.872a.856.856,0,0,0,0,1.713h8.256a.856.856,0,0,0,0-1.713Z"/>
+                                    </g>
+                                  </g>
+                                </g>
+                              </svg>
+                              <h3>3</h3>
+                              
+                              
+                              <svg xmlns="http://www.w3.org/2000/svg" width="46" height="31" viewBox="0 0 46 31">
+                                <g id="Objeto_inteligente_vectorial" data-name="Objeto inteligente vectorial" transform="translate(-5.75 -7.431)">
+                                  <g id="Group_27" data-name="Group 27">
+                                    <g id="Group_26" data-name="Group 26">
+                                      <path id="Path_15" data-name="Path 15" d="M47.273,19.449V11.993A4.262,4.262,0,0,0,42.7,7.431H14.655a4.236,4.236,0,0,0-4.575,4.562v7.456c-2.214.245-4.329,1.717-4.329,5.1v5.788A1.761,1.761,0,0,0,7.521,32.1h.59v4.562a1.761,1.761,0,0,0,1.771,1.766h1.673a1.761,1.761,0,0,0,1.771-1.766V32.055H44.174v4.611a1.761,1.761,0,0,0,1.771,1.766h1.673a1.761,1.761,0,0,0,1.771-1.766V32.055h.59a1.761,1.761,0,0,0,1.771-1.766V24.55C51.6,21.165,49.487,19.694,47.273,19.449ZM11.752,11.993h.1a2.513,2.513,0,0,1,2.8-2.8H42.7a2.513,2.513,0,0,1,2.8,2.8V19.4H44.174V15.181A1.761,1.761,0,0,0,42.4,13.415H31.579a1.761,1.761,0,0,0-1.771,1.766V19.4H27.741V15.181a1.761,1.761,0,0,0-1.771-1.766H15.147a1.761,1.761,0,0,0-1.771,1.766V19.4H11.752ZM42.4,15.181V19.4H31.579V15.181Zm-16.334,0V19.4H15.245V15.181ZM11.506,36.665H9.833V32.055h1.673v4.611Zm36.013,0H45.846V32.055h1.673Zm2.312-6.328H7.472v-2.6H49.831Zm0-4.366H7.472V24.55a3.089,3.089,0,0,1,3.395-3.384h35.57a3.07,3.07,0,0,1,3.395,3.384v1.422Z"/>
+                                    </g>
+                                  </g>
+                                </g>
+                            </svg>
+                            <h3>2</h3>
+                              
+                        </div>
+                        <button class="button-orange">Ver propiedad</button>
+                        
+                    </div>
+
+
+                </div>
+                
+            </div>
+        </section>
+        <section>
+            <div id="contact">
+                <div id="contact-text">
+
+                    <h1>Encuentra la casa de tus sueños</h1>
+                    <h2>Llena el formulario de contacto y un asesor se pondra en contacto a la brevedad</h2>
+                    <Button class="btn-outlined">Contactanos</Button>
+                </div>
+                
+            </div>
+        </section>
+        <section>
+            <div id="section-blog">
+
+                <div class="blog-posts">
+                    <h1 class="section-title">Nuestro Blog</h1>
+                    <div class="post-container">
+                        
+                        <div class="post">
+                            <img src="images/blog1.jpg" alt=""/>
+                            <div class="post-text">
+                                
+                                <h2 class="post-title">Terraza en el techo de tu casa</h2>
+                                <p class="author">Escrito el: <span>13-10-2022</span> por <span>Admin</span></p>
+                                <p>Consejos para construir una terraza en el techo de su casa con los mejores materiales y ahorrando dinero</p>
+                            </div>
+        
+                        </div>
+
+                        <div class="post">
+                            <img src="images/blog2.jpg" alt=""/>
+                            <div class="post-text">
+                                
+                                <h2 class="post-title">Guia para la decoracion de tu hogar</h2>
+                                <p class="author">Escrito el: <span>5-3-2020</span> por <span>Admin</span></p>
+                                <p>Maximiza el espacio en tu hogar con esta guia. Aprende a combinar muebles y colores para darle vida a tu espacio</p>
+                            </div>
+        
+                        </div>
+
+
+                        
+
+
+                    </div>
+                </div>
+                <div class="testimonials">
+                    <h1 class="section-title">Testimoniales</h1>
+                    <div class="testimonials-container">
+                        <div class="testimonial">
+                            <i class="fa-solid fa-quote-left"></i>
+                            <p class="testimonial-text">
+                                El personal se comporto de una excelente forma, 
+                                muy buena atención y la casa que me ofrecieron cumple con todas las expectativas
+                            </p>
+                            <p class="author-testimonial">
+                                Juan De la Torre
+                            </p>
+                        </div>
+                    </div>
+    
+                </div>
+
+            </div>
+        </section>
+        <footer>
+            <div id="footer-content">
+                <div id="footer-logo">
+                    <h1 id="header-title">BIENES <span>RAICES</span></h1>
+                    <p>Creado por: Fernando Vallejos</p>
+                </div>
+                <div id="footer-menu">
+                    <ul>
+                        <li><a href="">Inicio</a></li>
+                        <li><a href="">Nosotros</a></li>
+                        <li><a href="">Blog</a></li>
+                        <li><a href="">Contacto</a></li>
+                    </ul>
+                </div>
+                <div id="footer-social">
+                    <ul>
+                        <li><a href=""><i class="fa-brands fa-facebook-f"></i>Facebook</a></li>
+                        <li><a href=""><i class="fa-brands fa-instagram"></i>Instagram</a></li>
+                        <li><a href=""><i class="fa-brands fa-twitter"></i>Twitter</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+
+    </main>
+</body>
+</html>
